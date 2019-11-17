@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>378</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>420</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 10pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>420</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 10pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Save Edit</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Subject</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>60</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>0</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 10pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Edit or Delete subject</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Period</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_10">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>240</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Class</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>JSS 1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>JSS 2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>JSS 3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SSS 1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SSS 2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SSS 3</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_9">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>190</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Teachers</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_6">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>290</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Monday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tuesday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Wednesday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Thursday</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Friday</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Days of the Week</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Subject Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Teacher's Name</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_8">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>340</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>1st</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2nd</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3rd</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4th</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5th</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6th</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7th</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8th</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_7">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>140</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Subject</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>English</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Maths</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Yoruba</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Physics</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Economics</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Civic Education</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Social Studies</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>French</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Computer Science</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>NHome Economics</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Agriculture</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Physical Education</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Religious Studies</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chemistry</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Technical Drawing</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Business Studies</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Intergrated Science</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Verdana&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Class </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

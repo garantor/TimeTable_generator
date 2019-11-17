@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1244</width>
+    <height>643</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 170, 0);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>552</x>
+      <y>80</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 252, 252);
+</string>
+    </property>
+    <property name="text">
+     <string>TimeTable</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 252, 252);
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Select Class</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JSS 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JSS 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JSS 3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SSS 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SSS 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SSS 3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>80</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(252, 252, 252);
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Select Day</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Monday</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tuesday</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wednesday</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Thursday</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Friday</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>1321</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 170, 0);
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>-30</x>
+        <y>0</y>
+        <width>1341</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <column>
+       <property name="text">
+        <string>Subject</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Teacher</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Class</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Period</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Weekdays</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>252</red>
+         <green>252</green>
+         <blue>252</blue>
+        </color>
+       </property>
+      </column>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>0</y>
+        <width>20</width>
+        <height>571</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>10</y>
+      <width>981</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 20pt &quot;Verdana&quot;;
+font: 75 18pt &quot;Verdana&quot;;
+color: rgb(31, 31, 31);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1244</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuStaffs">
+    <property name="title">
+     <string>Staffs</string>
+    </property>
+    <widget class="QMenu" name="menuUsers">
+     <property name="title">
+      <string>Users</string>
+     </property>
+     <addaction name="actionCreate_New_Users"/>
+     <addaction name="actionEdit_New_User"/>
+     <addaction name="actionDelete_User"/>
+    </widget>
+    <widget class="QMenu" name="menuTeachers">
+     <property name="title">
+      <string>Teachers</string>
+     </property>
+     <addaction name="actionAdde_New_Teacher"/>
+     <addaction name="actionEdit_Techer"/>
+     <addaction name="actionDelete_Teacher"/>
+    </widget>
+    <addaction name="menuUsers"/>
+    <addaction name="menuTeachers"/>
+   </widget>
+   <widget class="QMenu" name="menuSubjects">
+    <property name="title">
+     <string>Subjects</string>
+    </property>
+    <addaction name="actionAdd_Subject"/>
+    <addaction name="actionDelete_Subject"/>
+    <addaction name="actionEdit_Subject"/>
+   </widget>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>Admin</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuClass">
+    <property name="title">
+     <string>Class</string>
+    </property>
+    <addaction name="actionAdd_Class_2"/>
+   </widget>
+   <addaction name="menuStaffs"/>
+   <addaction name="menuSubjects"/>
+   <addaction name="menuClass"/>
+   <addaction name="menuAdmin"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate_New_Users">
+   <property name="text">
+    <string>Create New Users</string>
+   </property>
+  </action>
+  <action name="actionEdit_New_User">
+   <property name="text">
+    <string>Edit  User</string>
+   </property>
+  </action>
+  <action name="actionDelete_User">
+   <property name="text">
+    <string>Delete User</string>
+   </property>
+  </action>
+  <action name="actionAdde_New_Teacher">
+   <property name="text">
+    <string>Adde New Teacher</string>
+   </property>
+  </action>
+  <action name="actionEdit_Techer">
+   <property name="text">
+    <string>Edit Teacher</string>
+   </property>
+  </action>
+  <action name="actionDelete_Teacher">
+   <property name="text">
+    <string>Delete Teacher</string>
+   </property>
+  </action>
+  <action name="actionAdd_Student">
+   <property name="text">
+    <string>Add Student</string>
+   </property>
+  </action>
+  <action name="actionEdit_Student">
+   <property name="text">
+    <string>Edit Student</string>
+   </property>
+  </action>
+  <action name="actionDelete_Student">
+   <property name="text">
+    <string>Delete Student</string>
+   </property>
+  </action>
+  <action name="actionAdd_Class">
+   <property name="text">
+    <string>Add Class</string>
+   </property>
+  </action>
+  <action name="actionEdit_Class_Details">
+   <property name="text">
+    <string>Edit Class Details</string>
+   </property>
+  </action>
+  <action name="actionDelete_Class">
+   <property name="text">
+    <string>Delete Class</string>
+   </property>
+  </action>
+  <action name="actionAdd_Subject">
+   <property name="text">
+    <string>Add Subject</string>
+   </property>
+  </action>
+  <action name="actionDelete_Subject">
+   <property name="text">
+    <string>Delete Subject</string>
+   </property>
+  </action>
+  <action name="actionEdit_Subject">
+   <property name="text">
+    <string>Edit Subject</string>
+   </property>
+  </action>
+  <action name="actionAdd_Class_2">
+   <property name="text">
+    <string>Add Class</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
