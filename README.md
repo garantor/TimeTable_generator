@@ -21,13 +21,24 @@
 # ScreenShot 
 
 ![](tb1.jpg)
+---
 ![](tb2.jpg)
+---
 ![](tb3.jpg)
+---
 ![](tb4.jpg)
+---
 ![](tb5.jpg)
+---
 ![](tb6.jpg)
+---
 ![](tb7.jpg)
+---
 
 
-[EMAIL](sundayafolabi992@gmail.com)
-[LINKEDIN](https://www.linkedin.com/in/afolabisunday/)
+# CONTACT INFO
+- [PROFILE](https://github.com/garantor)
+
+---
+
+- [LINKEDIN](https://www.linkedin.com/in/afolabisunday/)
