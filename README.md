@@ -1,39 +1,33 @@
+# Welcome ! 
+## Many Schools and College Uses a Manuel Means to schedule timetable leading to Subject/ Course Clashing and might take several days to Change and correct this, here is A simple TimeTable generator software for schools.
 
 
-# users field
-- user name
-- user id
-- email 
-- passwrd 
-- phone number
 
 
-# teachers
-- Teachers name
-- phone
-- subject
-- id numbers
+# Features
+ - Create User
+ - Edit User and Delete Users
+ ---
+ - Create teachers 
+ - Edit na Delete Teachers
+ ---
+ - Add Subject
+ - Edit and delete Subject
+---
+- Add Class
+- Edit and Delete Class
+## MORE OPTION TO BE ADDED ON DEMAND
+
+# ScreenShot 
+
+![](tb1.jpg)
+![](tb2.jpg)
+![](tb3.jpg)
+![](tb4.jpg)
+![](tb5.jpg)
+![](tb6.jpg)
+![](tb7.jpg)
 
 
-# create class
-- class name(jss 1b)
-- total number of student
-- 
-
-
-# subject 
-- subject name 
-- Teacher
-- class taking subject                        
-- period (monday, First period)
-- Days (monday - friday)
-
-(jss1b takes math every money for 2nd period and it taught by                                                 me afolabi)
-
-# optional
-## student field
- - student name 
- - 
-
-
- 
+[EMAIL](sundayafolabi992@gmail.com)
+[LINKEDIN](https://www.linkedin.com/in/afolabisunday/)

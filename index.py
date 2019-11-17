@@ -1,5 +1,6 @@
 # This Python file uses the following encoding: utf-8
 
+Password = 'Sunlabi001.'
 import os
 import sys
 import time
@@ -15,6 +16,9 @@ page ,_ = loadUiType('timetable.ui')
 createuser ,_ = loadUiType('registerUser.ui')
 loginMain ,_ = loadUiType('login.ui')
 
+#### Main Class #####
+
+
 class LogMeIn(QWidget, loginMain):
     def __init__(self):
         QWidget.__init__(self)
@@ -25,7 +29,7 @@ class LogMeIn(QWidget, loginMain):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
 
@@ -46,8 +50,6 @@ class LogMeIn(QWidget, loginMain):
             else:
                 self.label.setText('Please Check Your Login Details')
 
-        
-
 
 
 
@@ -60,6 +62,10 @@ class MainApp(QMainWindow, page):
         self.showgenerateTimetable()
         self.pushButton.clicked.connect(self.searchClass)
 
+#####################################
+### Function for handling Buttons ##
+####################################
+
     def Handled_Button(self):
         self.actionCreate_New_Users.triggered.connect(self.addUserClass)
         self.actionEdit_New_User.triggered.connect(self.editUser)
@@ -71,6 +77,8 @@ class MainApp(QMainWindow, page):
         self.actionDelete_Subject.triggered.connect(self.showeditsubject)
         self.actionEdit_Subject.triggered.connect(self.showeditsubject)
         self.actionQuit.triggered.connect(self.quitApp)
+        self.actionAdd_Class_2.triggered.connect(self.showAddClass)
+
 
     def quitApp(self):
         warning = QMessageBox.warning(self, 'QUIT APP', 'Are you sure you want to Exit this app?', QMessageBox.Yes | QMessageBox.No)
@@ -102,6 +110,10 @@ class MainApp(QMainWindow, page):
         self.window = EditDeleteSubject()
         self.window.show()
 
+    def showAddClass(self):
+        self.window = createClass()
+        self.window.show()
+
 
     
 ######################################################
@@ -113,7 +125,7 @@ class MainApp(QMainWindow, page):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
 
@@ -131,7 +143,7 @@ class MainApp(QMainWindow, page):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
 
@@ -152,6 +164,14 @@ class MainApp(QMainWindow, page):
 
         self.db.close()
 
+######### Add Class ##########
+AddClass , _ = loadUiType("addClass.ui")
+
+class createClass(QWidget, AddClass):
+    def __init__(self):
+        QWidget.__init__(self)
+        self.setupUi(self)
+
 
 
 ####################################################
@@ -171,7 +191,7 @@ class SubjectMain(QWidget, subjectclass):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',)
         self.cur = self.db.cursor()
 
@@ -191,7 +211,7 @@ class SubjectMain(QWidget, subjectclass):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',)
         self.cur = self.db.cursor()
 
@@ -217,7 +237,7 @@ class EditDeleteSubject(QWidget, editsubject):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',)
         self.cur = self.db.cursor()
 
@@ -232,7 +252,7 @@ class EditDeleteSubject(QWidget, editsubject):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
 
@@ -273,7 +293,7 @@ class EditDeleteSubject(QWidget, editsubject):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',)
 
         self.cur = self.db.cursor()
@@ -312,13 +332,13 @@ class AddNewTeacher(QWidget, addteacher):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
         Name = self.lineEdit.text()
         subject = self.lineEdit_2.text()
         address = self.lineEdit_3.text()
-        phone = self.lineEdit_4.text() 
+        phone = self.lineEdit_4.text()
 
         try:
             self.cur = self.db.cursor()
@@ -343,7 +363,7 @@ class EditTeachersMain(QWidget, editTeachersUi):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
         self.cur = self.db.cursor()
@@ -367,7 +387,7 @@ class EditTeachersMain(QWidget, editTeachersUi):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',)
 
         self.cur = self.db.cursor()
@@ -389,7 +409,7 @@ class EditTeachersMain(QWidget, editTeachersUi):
             self.db = pymysql.connect(
                 host='localhost',
                 user='root',
-                password='Sunlabi001.',
+                password=Password,
                 db='timetable',
             )
             self.cur = self.db.cursor()
@@ -409,7 +429,7 @@ class EditTeachersMain(QWidget, editTeachersUi):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
         try:
@@ -444,7 +464,7 @@ class UserReg(QWidget, createuser):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
         username = self.lineEdit.text()
@@ -486,7 +506,7 @@ class EditUsers(QWidget, edituses):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
 
@@ -505,7 +525,7 @@ class EditUsers(QWidget, edituses):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
 
@@ -527,7 +547,7 @@ class EditUsers(QWidget, edituses):
         self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',
         )
 
@@ -562,7 +582,7 @@ class EditUsers(QWidget, edituses):
             self.db = pymysql.connect(
             host='localhost',
             user='root',
-            password='Sunlabi001.',
+            password=Password,
             db='timetable',)
 
             self.cur = self.db.cursor()

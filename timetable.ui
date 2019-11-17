@@ -140,6 +140,7 @@ background-color: rgb(255, 170, 0);
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(85, 0, 0);
 background-color: rgb(255, 170, 0);
 </string>
     </property>
@@ -325,7 +326,7 @@ color: rgb(31, 31, 31);</string>
   </action>
   <action name="actionAdde_New_Teacher">
    <property name="text">
-    <string>Adde New Teacher</string>
+    <string>Add New Teacher</string>
    </property>
   </action>
   <action name="actionEdit_Techer">

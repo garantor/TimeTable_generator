@@ -27,6 +27,10 @@ background-color: rgb(255, 170, 0);
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(252, 252, 252);
+color: rgb(0, 0, 0);</string>
+   </property>
    <property name="text">
     <string>Create Class</string>
    </property>
@@ -88,6 +92,10 @@ background-color: rgb(255, 170, 0);
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(252, 252, 252);
+color: rgb(0, 0, 0);</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
@@ -98,6 +106,10 @@ background-color: rgb(255, 170, 0);
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(252, 252, 252);
+color: rgb(0, 0, 0);</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="geometry">
@@ -107,6 +119,10 @@ background-color: rgb(255, 170, 0);
      <width>141</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(252, 252, 252);
+color: rgb(0, 0, 0);</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
